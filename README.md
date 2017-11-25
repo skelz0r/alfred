@@ -1,24 +1,32 @@
-# README
+# Alfred
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Personal google home app, for fun
 
-Things you may want to cover:
+## Install
 
-* Ruby version
+* Install ruby 2.3.3
+* Install [gactions](https://developers.google.com/actions/tools/gactions-cli)
+* Install pg
+* Create an app on heroku
 
-* System dependencies
+## TODO
 
-* Configuration
+Make useful commands plz thx
 
-* Database creation
+## Deploy
 
-* Database initialization
+It will:
 
-* How to run the test suite
+1. Update actions on google
+2. Update test simulator
+3. Deploy on heroku
 
-* Services (job queues, cache servers, search engines, etc.)
+```shell
+gactions update --project alfred-187112 --action_package action.json
+```
 
-* Deployment instructions
+## Resources
 
-* ...
+* [Actions console](https://console.actions.google.com/u/1/)
+* [ActionPackage reference](https://developers.google.com/actions/reference/rest/Shared.Types/ActionPackage)
+* [google\_assistant gem](https://github.com/skelz0r/google-assistant-ruby)

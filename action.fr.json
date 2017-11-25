@@ -1,0 +1,70 @@
+{
+  "locale": "fr",
+  "manifest": {
+    "displayName": "Skelz0bot",
+    "invocationName": "skel zo bote",
+    "shortDescription": "skelz0r's personal assistant",
+    "longDescription": "skelz0r's personal assistant",
+    "sampleInvocation": [
+      "demande à skelz0bot"
+    ],
+    "voiceName": "male_2"
+  },
+  "actions": [
+    {
+      "name": "MAIN",
+      "description": "Test",
+      "fulfillment": {
+        "conversationName": "skelz0bot"
+      },
+      "intent": {
+        "name": "actions.intent.MAIN",
+        "trigger": {
+          "queryPatterns": [
+            "demande à skelz0bot"
+          ]
+        }
+      }
+    },
+    {
+      "name": "MIAM",
+      "fulfillment": {
+        "conversationName": "skelz0bot"
+      },
+      "intent": {
+        "name": "skelz0bot.MIAM",
+        "parameters": [
+          {
+            "name": "food",
+            "type": "SchemaOrg_Text"
+          }
+        ],
+        "trigger": {
+          "queryPatterns": [
+            "manger $SchemaOrg_Text:food"
+          ]
+        }
+      }
+    },
+    {
+      "name": "CALM",
+      "fulfillment": {
+        "conversationName": "skelz0bot"
+      },
+      "intent": {
+        "name": "skelz0bot.CALM",
+        "trigger": {
+          "queryPatterns": [
+            "rester calme"
+          ]
+        }
+      }
+    }
+  ],
+  "conversations": {
+    "skelz0bot": {
+      "name": "skelz0bot",
+      "url": "https://alfred-skelz0r-assistant.herokuapp.com/google_assistant"
+    }
+  }
+}
