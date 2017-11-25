@@ -15,15 +15,15 @@ Make useful commands plz thx
 
 ## Deploy
 
+```shell
+./bin/deploy.sh
+```
+
 It will:
 
 1. Update actions on google
 2. Update test simulator
 3. Deploy on heroku
-
-```shell
-gactions update --project alfred-187112 --action_package action.json
-```
 
 ## Resources
 
