@@ -64,7 +64,7 @@
   "conversations": {
     "skelz0bot": {
       "name": "skelz0bot",
-      "url": "https://alfred-skelz0r-assistant.herokuapp.com/google_assistant"
+      "url": "https://skelz0bot.herokuapp.com/google_assistant"
     }
   }
 }
